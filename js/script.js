@@ -309,8 +309,8 @@ var MYAPP = {};
         MYAPP.revapi = $('.mainSlider').revolution(
             {
                 delay: 5000,
-                startwidth: 1920,
-                startheight: 1200,
+                startwidth: $( window ).width(),
+                startheight: $( window ).height(),
                 fullWidth: "on",
                 //forceFullWidth: "on",
                 navigationType: "none",
