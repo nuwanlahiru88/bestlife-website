@@ -131,7 +131,7 @@ and open the template in the editor.
 </script>  
 
 
-
+ 
     </head>
     <body style="background-image: url(images/bg2.jpg);">
 
@@ -161,7 +161,7 @@ and open the template in the editor.
 
 
 
-        <div class="layout">
+        <div class="layout" id="pbox">
 
             <div style="width: 80%;padding-bottom: 40%;position: fixed;">
                <!-- <h1 style="" id="people">OUR PEOPLE OUR STRENGTH</h1>  -->
@@ -411,6 +411,18 @@ and open the template in the editor.
 
         </div>        
 
+<script type="text/javascript">
+
+
+            var width = screen.width - 300;
+            var height = screen.height - 85;
+            var clientHeight = document.getElementById('pbox').clientHeight;
+            var margin = (height-550)/2;
+//            alert(margin);
+            document.getElementById("pbox").style.paddingTop = margin+"px";
+            
+
+        </script>
 
 
 
