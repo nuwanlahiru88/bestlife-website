@@ -184,108 +184,110 @@ html, body {
 
 </style>
 
-<script>
-    
-  (function () {
-}.call(this));  
-
-
-$(document).ready(function(){
-   
-   var images1 = [
-    "Trangle_Images/left1.jpg",
-    "Trangle_Images/left2.jpg",
-    "Trangle_Images/left3.jpg",
-    "Trangle_Images/left4.jpg"];
-
-currentImage1 = 0;
-
-function ChangeImage1() {
-    //debugger;
-    
-   // $('span').text(images[currentImage]);
-    if (currentImage1 > images1.length - 1) currentImage1 = 0;
-    $("#topleft").css("background-image", "url(" + images1[currentImage1] + ")");
-
-    $("#topleft").fadeOut(500, function () {
-       // alert(images[currentImage]);
-        
-        $("#topleft").attr("xlink:href", images1[currentImage1]);
-        $("#topleft").fadeIn(500);
-    });
-    currentImage1++;
-    setTimeout(function () {
-        ChangeImage1();
-    }, 5000);
+<script type="text/javascript">
+    var i;
+function ChangeImage1(i) { 
+   // alert($(Window).height());
+    $("#topleft").attr("xlink:href", i); 
 }
-
-ChangeImage1();
-        
-        
+   
+function ChangeImage(y) {   
+    alert(y);
+    //$("#topleft").css("display", "none");
+    $("#topleft").attr("xlink:href", "images/slide1bg.jpg");
+    $("#topleft").fadeOut(500, function () {
+        alert(y);
+    $("#topleft").attr("xlink:href", y);
+    $("#topleft").fadeIn(500);
 });
+    }
     
+//  (function () {
+//}.call(this));  
+//
+//
+
+//     var images1 = [
+//   "Trangle_Images/left1.jpg",
+//   "Trangle_Images/left2.jpg",
+//   "Trangle_Images/left3.jpg",
+//   "Trangle_Images/left4.jpg"];
+//
+//currentImage1 = 0;
+
+
+
+    //debugger;
+   // alert(i);
+   // $('span').text(images[currentImage]);
+   // if (currentImage1 > images1.length - 1) currentImage1 = 0;
+//    $("#topleft").css("background-image", "url(" + i + ")");
+//
+//    $("#topleft").fadeOut(500, function () {
+//       // alert(images[currentImage]);
+//        
+//        $("#topleft").attr("xlink:href", i);
+//        $("#topleft").fadeIn(500);
+//    });
+//   // currentImage1++;
+////    setTimeout(function () {
+////        ChangeImage1();
+////    }, 5000);
+//}
+//
+
+//        
+//        
+//}
+//    
 // Using multiple unit types within one animation.
 $(document).ready(function(){
+//    
+//    
     
-    
-    
-var images = [
-    "Trangle_Images/right1.jpg",
-    "Trangle_Images/right2.jpg",
-    "Trangle_Images/right3.jpg",
-    "Trangle_Images/right4.jpg"];
-
-currentImage = 0;
+//var images = [
+//    "Trangle_Images/right1.jpg",
+//    "Trangle_Images/right2.jpg",
+//    "Trangle_Images/right3.jpg",
+//    "Trangle_Images/right4.jpg"];
+//
+//currentImage = 0;
 
 function ChangeImage() {
     //debugger;
-    
-   // $('span').text(images[currentImage]);
-    if (currentImage > images.length - 1) currentImage = 0;
-    $("#topright").css("background-image", "url(" + images[currentImage] + ")");
+   
 
-    $("#topright").fadeOut(500, function () {
-       // alert(images[currentImage]);
-        
-        $("#topright").attr("xlink:href", images[currentImage]);
-        $("#topright").fadeIn(500);
-    });
-    currentImage++;
-    setTimeout(function () {
-        ChangeImage();
-    }, 5000);
-}
 
-ChangeImage();
+// ChangeImage();
    
    $('#topright').css('cursor', 'pointer');
    
    $('#topleft').css('cursor', 'pointer');
    
    
-//$('#topright').hover(function(){  
-//      
-//     var a = $('#topright');
-//     a.attr("xlink:href","Trangle_Images/right2.jpg");
-//   });
-//   
-//$('#topleft').mouseout(function(){  
-//       
-//     var a = $('#topright');
-//     a.attr("xlink:href","Trangle_Images/Trangle_ImgID3.jpg");
-//   });
-//   
-//$('#topright').hover(function(){  
-//       
-//     var a = $('#topleft');
-//     a.attr("xlink:href","Trangle_Images/left2.jpg");
-//   });
-//
-//$('#topleft').mouseout(function(){  
-//       
-//     var a = $('#topleft');
-//     a.attr("xlink:href","Trangle_Images/left2.jpg");
-//   });
+$('#topright').hover(function(){  
+      
+     var a = $('#topright');
+     a.attr("xlink:href","Trangle_Images/right2.jpg");
+   });
+   
+$('#topleft').mouseout(function(){  
+       
+     var a = $('#topright');
+     a.attr("xlink:href","Trangle_Images/Trangle_ImgID3.jpg");
+   });
+   
+$('#topright').hover(function(){  
+       
+     var a = $('#topleft');
+     a.attr("xlink:href","Trangle_Images/left2.jpg");
+   });
+
+$('#topleft').mouseout(function(){  
+      
+    var a = $('#topleft');
+    a.attr("xlink:href","Trangle_Images/left2.jpg");
+  });
    
    
    $('#abs').css('cursor', 'pointer');
@@ -328,8 +330,8 @@ ChangeImage();
      a.attr("xlink:href","1.svg_Images/1.svg_ImgID3.jpg");
    });
    
+    }
 });
-
 
 ////////////////////////////////////////////////////
 
@@ -490,7 +492,7 @@ viewBox="0 0 2.56087 1.41867"
 </div>
        
             <!--MENU-->
-<!--<div class="menu_trigger" id="myMenuTrigger"></div> -->
+<div class="menu_trigger" id="myMenuTrigger"></div> 
         <div class="menu animate">
             <h2 class="underline"><a href="index.html"><img style="width:150px;" src="images/Logo.png" /></a></h2>
               <!--  <span class="icon_close" id="menuClose"></span> -->

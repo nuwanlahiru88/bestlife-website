@@ -950,10 +950,17 @@ section { position: relative; }
     .invisible767 { display: none; }
     .bigText { font-size: 56px; line-height: 50px; }
     .mediumText { font-size: 20px; line-height: 50px; }
-
+    .menu{
+        display: none;
+    }
+    .mainSliderContainer{
+            background-position: 0% 0%;
+        
+    }
+    #site-changer{ display: none;}
     /*LOGO AND MENU */
     #logo { margin-top: 30px; }
-    #site-changer { margin-top:35px; }
+/*    #site-changer { margin-top:35px; }*/
     .menu_trigger { top: 30px; right: 20px; }
     /* SLIDER */
     .oblique .mainSliderContainer .Prev, .oblique .mainSliderContainer .Next { bottom: 0px; }
@@ -1007,6 +1014,15 @@ section { position: relative; }
     .aboutAuthor .aboutAuthorContent { text-align: center; }
     .aboutAuthor .aboutAuthorContent .aboutAuthorImg { float: none; margin-bottom: 30px; }
     .aboutAuthor .aboutAuthorContent .aboutText { margin-left: 0; }
+    
+    
+      /*SLIDER*/
+    .oblique .mainSliderContainer .Prev { right: 63px; left: auto; bottom: -13px; width: 60px; height: 60px; }
+    .oblique .mainSliderContainer .Next { right: 5px; left: auto; width: 60px; height: 60px; }
+    .oblique .mainSliderContainer .Prev, .oblique .mainSliderContainer .Next { padding: 22px 26px; }
+    .mainSliderContainer .mainSlider .slideImgArrow { margin-top: -10px; left: 15px !important; }
+    .mainSliderContainer .mainSlider .imgArrowOffset { left: 27px !important; }
+    .mainSliderContainer .mainSlider .mediumText a { font-size: 9px !important; }
 }
 
 
@@ -1016,7 +1032,7 @@ section { position: relative; }
 
 
 @media (max-width:320px) {
-    .invisible320 { display: none; }
+      .invisible320 { display: none; }
 
     .latestWorkContainer .latestWorkCarousel li { width: 290px; }
     .fwCarouselContainer ul li { width: 290px; }
